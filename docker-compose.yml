@@ -1,0 +1,85 @@
+version: '3.8'
+
+services:
+  elementum:
+    # Build configuration
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_ENV: production
+
+    # Container name
+    container_name: elementum-app
+
+    # Port mapping
+    ports:
+      - "3000:3000"
+
+    # Restart policy
+    restart: unless-stopped
+
+    # Environment variables
+    environment:
+      - NODE_ENV=production
+
+    # Resource limits
+    mem_limit: 512m
+    cpu_limit: 1
+    cpu_reservation: 0.5
+    mem_reservation: 256m
+
+    # Health check
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+    # Logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+    # Networking
+    networks:
+      - app-network
+
+    # Security
+    security_opt:
+      - no-new-privileges:true
+
+    # Volumes (optional - for persistent logs)
+    volumes:
+      - ./logs:/var/log/nginx:rw
+
+  # Optional: Nginx reverse proxy for production
+  # Uncomment if you need SSL/TLS or advanced routing
+  # nginx-proxy:
+  #   image: nginx:alpine
+  #   container_name: nginx-proxy
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx-proxy.conf:/etc/nginx/nginx.conf:ro
+  #     - ./ssl:/etc/nginx/ssl:ro
+  #   networks:
+  #     - app-network
+  #   depends_on:
+  #     - elementum
+
+networks:
+  app-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+# Named volumes for persistence (optional)
+volumes:
+  logs:
+    driver: local

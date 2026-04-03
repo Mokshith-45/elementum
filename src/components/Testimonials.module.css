@@ -1,0 +1,202 @@
+.testimonials {
+  padding: var(--section-padding);
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+}
+
+/* ===== AVATAR GROUPS ===== */
+.avatarGroup {
+  position: relative;
+  height: 420px;
+}
+
+.avatar {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-white);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sizes */
+.sm { width: 68px; height: 68px; }
+.md { width: 88px; height: 88px; }
+.lg { width: 130px; height: 130px; }
+
+/* Left group positions */
+.left_top { top: 0; left: 0; }
+.left_mid { top: 160px; left: 15px; }
+.left_bot { bottom: 0; left: 0; }
+
+/* Right group positions */
+.right_top { top: 10px; right: 0; }
+.right_mid { top: 145px; right: 15px; }
+.right_bot { bottom: 0; right: 0; }
+
+/* ===== CENTER ===== */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.heading {
+  font-family: 'Satoshi', var(--font-sans);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 600;
+  color: var(--color-black);
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+.highlightPill {
+  display: inline-block;
+  background: #D7EEDD;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -2px;
+  right: -2px;
+  height: 4px;
+  background: transparent;
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.scribble {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+/* ===== QUOTE CARD ===== */
+.quoteCard {
+  background: #f0f5f0;
+  border-radius: 28px;
+  padding: 48px 52px;
+  position: relative;
+  max-width: 600px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.openQuote,
+.closeQuote {
+  font-family: 'Gerbil', serif;
+  font-size: 64px;
+  color: #d0d0d0;
+  line-height: 0.8;
+  position: absolute;
+  font-weight: 400;
+}
+
+.openQuote {
+  top: 16px;
+  left: 26px;
+}
+
+.closeQuote {
+  bottom: 8px;
+  right: 26px;
+}
+
+.quoteText {
+  font-family: 'Satoshi', var(--font-sans);
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--color-black);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 60px 1fr 60px;
+    gap: 16px;
+  }
+
+  .heading {
+    font-size: clamp(24px, 3.5vw, 36px);
+  }
+
+  .quoteCard {
+    padding: 36px 40px;
+    border-radius: 24px;
+  }
+
+  .quoteText {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .avatarGroup {
+    height: 320px;
+  }
+
+  .sm { width: 56px; height: 56px; }
+  .md { width: 72px; height: 72px; }
+  .lg { width: 100px; height: 100px; }
+
+  .left_top { top: 0; left: 0; }
+  .left_mid { top: 130px; left: 10px; }
+  .left_bot { bottom: 0; left: 0; }
+
+  .right_top { top: 10px; right: 0; }
+  .right_mid { top: 120px; right: 10px; }
+  .right_bot { bottom: 0; right: 0; }
+
+  .openQuote,
+  .closeQuote {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .avatarGroup {
+    display: none;
+  }
+
+  .quoteCard {
+    padding: 28px 24px;
+  }
+
+  .openQuote,
+  .closeQuote {
+    font-size: 48px;
+  }
+}

@@ -1,0 +1,90 @@
+/* ===== GLOBAL CSS ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-serif: 'Gerbil', Georgia, serif;
+  --font-sans: 'Satoshi', -apple-system, sans-serif;
+  --font-address: 'Friends', monospace;
+
+  --color-black: #000000;
+  --color-dark: #1a1a1a;
+  --color-body: #000000;
+  --color-muted: #000000;
+  --color-light-muted: #000000;
+  --color-border: #000000;
+  --color-white: #ffffff;
+
+  --color-bg-mint: #D7EEDD;
+  --color-bg-light: #f8f8f8;
+
+  --highlight-pink: #f5c2cc;
+  --highlight-yellow: #f5f0a0;
+  --highlight-green: #c8e6c9;
+  --highlight-mint-text: #4caf7d;
+
+  --color-red: #e53935;
+  --color-purple: #7b2d8b;
+
+  --max-width: 1200px;
+  --section-padding: 100px 0;
+  --container-px: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-body);
+  background: var(--color-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  :root {
+    --container-px: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-px: 24px;
+    --section-padding: 64px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-px: 16px;
+    --section-padding: 48px 0;
+  }
+}
