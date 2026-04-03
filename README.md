@@ -207,7 +207,7 @@ elementum/
 
 ```bash
 # 1️⃣ Clone the repository
-git clone <repository-url>
+git clone https://github.com/Mokshith-45/elementum.git
 cd elementum
 
 # 2️⃣ Install dependencies
@@ -253,19 +253,19 @@ npm run preview
 
 ```
 ✅ Docker 20.10+
-✅ Docker Compose (optional but recommended)
+✅ Docker Compose (optional)
 ```
 
 ### ⚡ Quick Start
 
 **Build the Docker image:**
 ```bash
-docker build -t elementum-app:latest .
+docker build -t elementum .
 ```
 
 **Run the container:**
 ```bash
-docker run -d -p 3000:80 --name elementum elementum-app:latest
+docker run -d -p 3000:80 --name elementum elementum
 ```
 
 > 🌐 Access the app at **http://localhost:3000**
@@ -283,29 +283,23 @@ docker rm elementum
 
 ---
 
-### 🐳 Docker Compose (Recommended)
+<details>
+<summary><strong>🐳 Optional: Docker Compose Setup</strong></summary>
 
-**Start all services:**
+If you have Docker Compose installed, use it for easier orchestration:
+
 ```bash
+# Start services
 docker-compose up -d
-```
 
-**View status:**
-```bash
-docker-compose ps
-```
-
-**View real-time logs:**
-```bash
+# View logs
 docker-compose logs -f
-```
 
-**Stop all services:**
-```bash
+# Stop services
 docker-compose down
 ```
 
----
+</details>
 
 ### 🏗️ Build Architecture
 
@@ -392,8 +386,9 @@ dist/                   # Build artifacts
 | **Minification** | ✅ Vite automatically minifies code |
 | **Tree-Shaking** | ✅ Unused code removed from bundles |
 | **Security Headers** | ✅ Nginx configured with defaults |
-| **Non-Root Docker** | ✅ Recommended in compose file |
+| **Docker Non-Root** | ✅ Nginx runs as non-root user |
 | **Alpine Images** | ✅ Minimal attack surface |
+| **Health Checks** | ✅ Container health monitoring |
 
 ### ✅ Best Practices Checklist
 
