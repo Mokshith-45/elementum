@@ -10,7 +10,7 @@
 
 **A blazing-fast, modern React application with production-grade architecture**
 
-[Live Demo](#) • [Documentation](#) • [Support](#support)
+[GitHub Repo](https://github.com/Mokshith-45/elementum) • [Issues](https://github.com/Mokshith-45/elementum/issues) • [Discussions](https://github.com/Mokshith-45/elementum/discussions)
 
 </div>
 
@@ -38,7 +38,7 @@
 
 | Action | Command |
 |--------|---------|
-| **Clone** | `git clone <repo> && cd elementum` |
+| **Clone** | `git clone https://github.com/Mokshith-45/elementum.git && cd elementum` |
 | **Install** | `npm install` |
 | **Develop** | `npm run dev` |
 | **Build** | `npm run build` |
@@ -503,7 +503,7 @@ We love contributions! Here's how to get started:
 ### 1️⃣ Fork & Clone
 
 ```bash
-git clone https://github.com/yourusername/elementum.git
+git clone https://github.com/Mokshith-45/elementum.git
 cd elementum
 npm install
 ```
@@ -571,10 +571,10 @@ Permission is hereby granted, free of charge...
 
 | Channel | Link |
 |---------|------|
-| 📧 Email | support@elementum.dev |
-| 🐛 Issues | [GitHub Issues](#) |
-| 💬 Discussions | [GitHub Discussions](#) |
-| 🐦 Twitter | [@ElementumApp](#) |
+| 📧 Email | [Contact](mailto:mokshith@example.com) |
+| 🐛 Issues | [GitHub Issues](https://github.com/Mokshith-45/elementum/issues) |
+| 💬 Discussions | [GitHub Discussions](https://github.com/Mokshith-45/elementum/discussions) |
+| 📚 Repository | [GitHub Repo](https://github.com/Mokshith-45/elementum) |
 
 </div>
 
