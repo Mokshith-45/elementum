@@ -10,7 +10,7 @@
 
 **A blazing-fast, modern React application with production-grade architecture**
 
-[GitHub Repo](https://github.com/Mokshith-45/elementum) • [Issues](https://github.com/Mokshith-45/elementum/issues) • [Discussions](https://github.com/Mokshith-45/elementum/discussions)
+[GitHub Repo](https://github.com/Mokshith-45/elementum) • [Issues](https://github.com/Mokshith-45/elementum/issues)
 
 </div>
 
@@ -534,20 +534,6 @@ git push origin feature/new-amazing-feature
 - Describe your changes clearly
 - Link any related issues
 - Request review from maintainers
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2026 Elementum Development Team
-
-Permission is hereby granted, free of charge...
-```
 
 ---
 
