@@ -551,35 +551,6 @@ Permission is hereby granted, free of charge...
 
 ---
 
-## 👥 Contributors
-
-<div align="center">
-
-| Role | Name |
-|------|------|
-| 👨‍💼 Lead Developer | Elementum Team |
-| 📝 Documentation | Community |
-| 🐛 Bug Reports | Contributors |
-
-</div>
-
----
-
-## 📞 Support & Questions
-
-<div align="center">
-
-| Channel | Link |
-|---------|------|
-| 📧 Email | [Contact](mailto:mokshith@example.com) |
-| 🐛 Issues | [GitHub Issues](https://github.com/Mokshith-45/elementum/issues) |
-| 💬 Discussions | [GitHub Discussions](https://github.com/Mokshith-45/elementum/discussions) |
-| 📚 Repository | [GitHub Repo](https://github.com/Mokshith-45/elementum) |
-
-</div>
-
----
-
 ## 🙌 Acknowledgments
 
 - 🎨 Inspired by modern React best practices
