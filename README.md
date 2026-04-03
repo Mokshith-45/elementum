@@ -5,7 +5,6 @@
 [![React](https://img.shields.io/badge/React-18.2.0-blue?style=flat-square&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-5.2.0-purple?style=flat-square&logo=vite)](https://vitejs.dev/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker)](https://www.docker.com/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Node Version](https://img.shields.io/badge/Node-16%2B-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
 
 **A blazing-fast, modern React application with production-grade architecture**
@@ -549,7 +548,7 @@ git push origin feature/new-amazing-feature
 
 ---
 
-**Made with  using React + Vite + Docker**
+**Made with ❤️ using React + Vite + Docker**
 
 *Last updated: April 3, 2026*
 
